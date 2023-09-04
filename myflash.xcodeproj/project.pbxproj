@@ -14,6 +14,9 @@
 		368D4FEF2AA621D400C205A0 /* myflashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FEE2AA621D400C205A0 /* myflashTests.swift */; };
 		368D4FF92AA621D400C205A0 /* myflashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FF82AA621D400C205A0 /* myflashUITests.swift */; };
 		368D4FFB2AA621D400C205A0 /* myflashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FFA2AA621D400C205A0 /* myflashUITestsLaunchTests.swift */; };
+		368D50082AA626F300C205A0 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D50072AA626F300C205A0 /* CharacterView.swift */; };
+		368D500A2AA627D600C205A0 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D50092AA627D600C205A0 /* helpers.swift */; };
+		368D500C2AA68C4F00C205A0 /* LineOfCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		368D4FF42AA621D400C205A0 /* myflashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myflashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		368D4FF82AA621D400C205A0 /* myflashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashUITests.swift; sourceTree = "<group>"; };
 		368D4FFA2AA621D400C205A0 /* myflashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		368D50072AA626F300C205A0 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		368D50092AA627D600C205A0 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
+		368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineOfCharactersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				368D4FDD2AA621D300C205A0 /* myflashApp.swift */,
 				368D4FDF2AA621D300C205A0 /* ContentView.swift */,
+				368D50072AA626F300C205A0 /* CharacterView.swift */,
+				368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */,
+				368D50092AA627D600C205A0 /* helpers.swift */,
 				368D4FE12AA621D400C205A0 /* Assets.xcassets */,
 				368D4FE32AA621D400C205A0 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				368D500C2AA68C4F00C205A0 /* LineOfCharactersView.swift in Sources */,
+				368D50082AA626F300C205A0 /* CharacterView.swift in Sources */,
 				368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */,
 				368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */,
+				368D500A2AA627D600C205A0 /* helpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +432,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyFlash;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,9 +452,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,11 +468,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MyFlash;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -468,9 +488,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
