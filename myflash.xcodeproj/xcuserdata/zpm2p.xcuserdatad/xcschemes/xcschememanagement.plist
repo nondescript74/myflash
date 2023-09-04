@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>myflash_debug.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>368D4FD92AA621D300C205A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>368D4FE92AA621D400C205A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>368D4FF32AA621D400C205A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
