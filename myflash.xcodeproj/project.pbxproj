@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FDD2AA621D300C205A0 /* myflashApp.swift */; };
+		368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FDF2AA621D300C205A0 /* ContentView.swift */; };
+		368D4FE22AA621D400C205A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368D4FE12AA621D400C205A0 /* Assets.xcassets */; };
+		368D4FE52AA621D400C205A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368D4FE42AA621D400C205A0 /* Preview Assets.xcassets */; };
+		368D4FEF2AA621D400C205A0 /* myflashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FEE2AA621D400C205A0 /* myflashTests.swift */; };
+		368D4FF92AA621D400C205A0 /* myflashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FF82AA621D400C205A0 /* myflashUITests.swift */; };
+		368D4FFB2AA621D400C205A0 /* myflashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FFA2AA621D400C205A0 /* myflashUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		368D4FEB2AA621D400C205A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368D4FD22AA621D300C205A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368D4FD92AA621D300C205A0;
+			remoteInfo = myflash;
+		};
+		368D4FF52AA621D400C205A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 368D4FD22AA621D300C205A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 368D4FD92AA621D300C205A0;
+			remoteInfo = myflash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		368D4FDA2AA621D300C205A0 /* myflash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myflash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		368D4FDD2AA621D300C205A0 /* myflashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashApp.swift; sourceTree = "<group>"; };
+		368D4FDF2AA621D300C205A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		368D4FE12AA621D400C205A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		368D4FE42AA621D400C205A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		368D4FEA2AA621D400C205A0 /* myflashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myflashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368D4FEE2AA621D400C205A0 /* myflashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashTests.swift; sourceTree = "<group>"; };
+		368D4FF42AA621D400C205A0 /* myflashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myflashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		368D4FF82AA621D400C205A0 /* myflashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashUITests.swift; sourceTree = "<group>"; };
+		368D4FFA2AA621D400C205A0 /* myflashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		368D4FD72AA621D300C205A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368D4FE72AA621D400C205A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368D4FF12AA621D400C205A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		368D4FD12AA621D300C205A0 = {
+			isa = PBXGroup;
+			children = (
+				368D4FDC2AA621D300C205A0 /* myflash */,
+				368D4FED2AA621D400C205A0 /* myflashTests */,
+				368D4FF72AA621D400C205A0 /* myflashUITests */,
+				368D4FDB2AA621D300C205A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		368D4FDB2AA621D300C205A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				368D4FDA2AA621D300C205A0 /* myflash.app */,
+				368D4FEA2AA621D400C205A0 /* myflashTests.xctest */,
+				368D4FF42AA621D400C205A0 /* myflashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		368D4FDC2AA621D300C205A0 /* myflash */ = {
+			isa = PBXGroup;
+			children = (
+				368D4FDD2AA621D300C205A0 /* myflashApp.swift */,
+				368D4FDF2AA621D300C205A0 /* ContentView.swift */,
+				368D4FE12AA621D400C205A0 /* Assets.xcassets */,
+				368D4FE32AA621D400C205A0 /* Preview Content */,
+			);
+			path = myflash;
+			sourceTree = "<group>";
+		};
+		368D4FE32AA621D400C205A0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				368D4FE42AA621D400C205A0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		368D4FED2AA621D400C205A0 /* myflashTests */ = {
+			isa = PBXGroup;
+			children = (
+				368D4FEE2AA621D400C205A0 /* myflashTests.swift */,
+			);
+			path = myflashTests;
+			sourceTree = "<group>";
+		};
+		368D4FF72AA621D400C205A0 /* myflashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				368D4FF82AA621D400C205A0 /* myflashUITests.swift */,
+				368D4FFA2AA621D400C205A0 /* myflashUITestsLaunchTests.swift */,
+			);
+			path = myflashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		368D4FD92AA621D300C205A0 /* myflash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368D4FFE2AA621D400C205A0 /* Build configuration list for PBXNativeTarget "myflash" */;
+			buildPhases = (
+				368D4FD62AA621D300C205A0 /* Sources */,
+				368D4FD72AA621D300C205A0 /* Frameworks */,
+				368D4FD82AA621D300C205A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myflash;
+			productName = myflash;
+			productReference = 368D4FDA2AA621D300C205A0 /* myflash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		368D4FE92AA621D400C205A0 /* myflashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368D50012AA621D400C205A0 /* Build configuration list for PBXNativeTarget "myflashTests" */;
+			buildPhases = (
+				368D4FE62AA621D400C205A0 /* Sources */,
+				368D4FE72AA621D400C205A0 /* Frameworks */,
+				368D4FE82AA621D400C205A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368D4FEC2AA621D400C205A0 /* PBXTargetDependency */,
+			);
+			name = myflashTests;
+			productName = myflashTests;
+			productReference = 368D4FEA2AA621D400C205A0 /* myflashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		368D4FF32AA621D400C205A0 /* myflashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 368D50042AA621D400C205A0 /* Build configuration list for PBXNativeTarget "myflashUITests" */;
+			buildPhases = (
+				368D4FF02AA621D400C205A0 /* Sources */,
+				368D4FF12AA621D400C205A0 /* Frameworks */,
+				368D4FF22AA621D400C205A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				368D4FF62AA621D400C205A0 /* PBXTargetDependency */,
+			);
+			name = myflashUITests;
+			productName = myflashUITests;
+			productReference = 368D4FF42AA621D400C205A0 /* myflashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		368D4FD22AA621D300C205A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					368D4FD92AA621D300C205A0 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					368D4FE92AA621D400C205A0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 368D4FD92AA621D300C205A0;
+					};
+					368D4FF32AA621D400C205A0 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 368D4FD92AA621D300C205A0;
+					};
+				};
+			};
+			buildConfigurationList = 368D4FD52AA621D300C205A0 /* Build configuration list for PBXProject "myflash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 368D4FD12AA621D300C205A0;
+			productRefGroup = 368D4FDB2AA621D300C205A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				368D4FD92AA621D300C205A0 /* myflash */,
+				368D4FE92AA621D400C205A0 /* myflashTests */,
+				368D4FF32AA621D400C205A0 /* myflashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		368D4FD82AA621D300C205A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368D4FE52AA621D400C205A0 /* Preview Assets.xcassets in Resources */,
+				368D4FE22AA621D400C205A0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368D4FE82AA621D400C205A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368D4FF22AA621D400C205A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		368D4FD62AA621D300C205A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */,
+				368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368D4FE62AA621D400C205A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368D4FEF2AA621D400C205A0 /* myflashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		368D4FF02AA621D400C205A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				368D4FF92AA621D400C205A0 /* myflashUITests.swift in Sources */,
+				368D4FFB2AA621D400C205A0 /* myflashUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		368D4FEC2AA621D400C205A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368D4FD92AA621D300C205A0 /* myflash */;
+			targetProxy = 368D4FEB2AA621D400C205A0 /* PBXContainerItemProxy */;
+		};
+		368D4FF62AA621D400C205A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 368D4FD92AA621D300C205A0 /* myflash */;
+			targetProxy = 368D4FF52AA621D400C205A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		368D4FFC2AA621D400C205A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		368D4FFD2AA621D400C205A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		368D4FFF2AA621D400C205A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
+				DEVELOPMENT_TEAM = YKHW2TJ32G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		368D50002AA621D400C205A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
+				DEVELOPMENT_TEAM = YKHW2TJ32G;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		368D50022AA621D400C205A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKHW2TJ32G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myflash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/myflash";
+			};
+			name = Debug;
+		};
+		368D50032AA621D400C205A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKHW2TJ32G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/myflash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/myflash";
+			};
+			name = Release;
+		};
+		368D50052AA621D400C205A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKHW2TJ32G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = myflash;
+			};
+			name = Debug;
+		};
+		368D50062AA621D400C205A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YKHW2TJ32G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.headydiscy.myflashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = myflash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		368D4FD52AA621D300C205A0 /* Build configuration list for PBXProject "myflash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368D4FFC2AA621D400C205A0 /* Debug */,
+				368D4FFD2AA621D400C205A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368D4FFE2AA621D400C205A0 /* Build configuration list for PBXNativeTarget "myflash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368D4FFF2AA621D400C205A0 /* Debug */,
+				368D50002AA621D400C205A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368D50012AA621D400C205A0 /* Build configuration list for PBXNativeTarget "myflashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368D50022AA621D400C205A0 /* Debug */,
+				368D50032AA621D400C205A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		368D50042AA621D400C205A0 /* Build configuration list for PBXNativeTarget "myflashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				368D50052AA621D400C205A0 /* Debug */,
+				368D50062AA621D400C205A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 368D4FD22AA621D300C205A0 /* Project object */;
+}
