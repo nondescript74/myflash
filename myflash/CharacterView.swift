@@ -9,11 +9,11 @@ import SwiftUI
 
 struct CharacterView: View {
     init(string: String) {
-        myKanaToDisplay = string
+        myCharToDisplay = string
     }
-    fileprivate var myKanaToDisplay: String = ""
+    fileprivate var myCharToDisplay: String = ""
     var body: some View {
-        Text(myKanaToDisplay)
+        Text(myCharToDisplay)
             .font(.headline)
             .padding(5)
     }
@@ -21,5 +21,5 @@ struct CharacterView: View {
 
 
 #Preview {
-    CharacterView(string: myKatakanaDict.value(forKey: "ka") as! String)
+    CharacterView(string: myHiraganaDict.value(forKey: "ka") as! String)
 }

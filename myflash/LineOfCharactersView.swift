@@ -11,14 +11,22 @@ struct LineOfCharactersView: View {
     
     init(lineOfChars: [String]) {
         myLineToDisplay = lineOfChars
+        mySet = "hiragana"
     }
     
     fileprivate var myLineToDisplay: [String] = [""]
+    fileprivate var mySet: String = ""
     
     var body: some View {
         HStack {
-            ForEach(myLineToDisplay, id:\.self) { akey in
-                Text(myKatakanaDict.value(forKey: akey) as! String)
+            if mySet == "katakana" {
+                ForEach(myLineToDisplay, id:\.self) { akey in
+                    Text(myKatakanaDict.value(forKey: akey) as! String)
+                }
+            } else {
+                ForEach(myLineToDisplay, id:\.self) { akey in
+                    Text(myHiraganaDict.value(forKey: akey) as! String)
+                }
             }
         }
         .padding()
