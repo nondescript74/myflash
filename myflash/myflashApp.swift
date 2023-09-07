@@ -11,7 +11,7 @@ import SwiftUI
 struct myflashApp: App {
     var body: some Scene {
         WindowGroup {
-            LineOfCharactersView(lineOfChars: myFirstRowOfKana.allKeys as! [String])
+            ContentView()
         }
     }
 }

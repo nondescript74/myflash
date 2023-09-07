@@ -14,6 +14,11 @@ struct LineOfCharactersView: View {
         mySet = "hiragana"
     }
     
+    init(lineOfChars: [String], setOf: String) {
+        myLineToDisplay = lineOfChars
+        mySet = setOf
+    }
+    
     fileprivate var myLineToDisplay: [String] = [""]
     fileprivate var mySet: String = ""
     
@@ -23,10 +28,12 @@ struct LineOfCharactersView: View {
                 ForEach(myLineToDisplay, id:\.self) { akey in
                     Text(myKatakanaDict.value(forKey: akey) as! String)
                 }
-            } else {
-                ForEach(myLineToDisplay, id:\.self) { akey in
-                    Text(myHiraganaDict.value(forKey: akey) as! String)
+            } else if mySet == "hiragana" {
+                ForEach(myLineToDisplay, id:\.self) { aValue in
+                    Text(aValue)
                 }
+            } else {
+                
             }
         }
         .padding()
