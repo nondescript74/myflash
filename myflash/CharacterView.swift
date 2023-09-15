@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct CharacterView: View {
-    init(string: String) {
-        myCharToDisplay = string
+    init(achar: aChar) {
+        myCharToDisplay = achar.code
     }
     fileprivate var myCharToDisplay: String = ""
+    
     var body: some View {
         Text(myCharToDisplay)
             .font(.headline)
@@ -21,5 +22,5 @@ struct CharacterView: View {
 
 
 #Preview {
-    CharacterView(string: myHiraganaDict.value(forKey: "ka") as! String)
+    CharacterView(achar: aChar(row: 1, column: 1, sound: "a", code: "\u{30a2}"))
 }

@@ -8,24 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+
+    fileprivate let hiraLabelText: String = ""
     var body: some View {
         
         TabView {
-            CharacterView(string: myHiraganaDict.value(forKey: "ga") as! String)
+            CharacterView(achar: aChar(row: 1, column: 1, sound: "a", code: "\u{30a2}"))
                 .tabItem {
-                    Label(myHiraganaDict.value(forKey: "ga") as! String, systemImage: "list.dash")
+                    Label("a", systemImage: "bookmark.square")
                 }
+            LineOfCharactersView(lineOfChars: [aChar(row: 1, column: 1, sound: "ka", code: "\u{30ab}"),
+                                                aChar(row: 1, column: 2, sound: "ki", code: "\u{30ad}"),
+                                                aChar(row: 1, column: 3, sound: "ku", code: "\u{30af}"),
+                                                aChar(row: 1, column: 4, sound: "ke", code: "\u{30b1}"),
+                                                aChar(row: 1, column: 5, sound: "ko", code: "\u{30b3}")])
+                .tabItem {
+                    Label(labelText, systemImage: "list.dash") }
             
-            LineOfCharactersView(lineOfChars:
-                                    [myHiraganaDict.value(forKey: "ka") as! String,
-                                     myHiraganaDict.value(forKey: "ki") as! String,
-                                     myHiraganaDict.value(forKey: "ku") as! String,
-                                     myHiraganaDict.value(forKey: "ke") as! String,
-                                     myHiraganaDict.value(forKey: "ko") as! String],
-                                 setOf: "hiragana")
-            .tabItem {
-                Label("\u{30a2}, " + "\u{30a4}, " + "\u{30a6}, " + "\u{30a8}, " + "\u{30aa}",
-                      systemImage: "list.dash") }
         }
     }
 }

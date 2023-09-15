@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3664B8FE2AAA301F00C65D9B /* LanguageInUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664B8FD2AAA301F00C65D9B /* LanguageInUse.swift */; };
 		368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FDD2AA621D300C205A0 /* myflashApp.swift */; };
 		368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FDF2AA621D300C205A0 /* ContentView.swift */; };
 		368D4FE22AA621D400C205A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368D4FE12AA621D400C205A0 /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3664B8FD2AAA301F00C65D9B /* LanguageInUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInUse.swift; sourceTree = "<group>"; };
+		3664B8FF2AAB6CBD00C65D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		368D4FDA2AA621D300C205A0 /* myflash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myflash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368D4FDD2AA621D300C205A0 /* myflashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashApp.swift; sourceTree = "<group>"; };
 		368D4FDF2AA621D300C205A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3664B8FC2AAA2FFA00C65D9B /* Observables */ = {
+			isa = PBXGroup;
+			children = (
+				3664B8FD2AAA301F00C65D9B /* LanguageInUse.swift */,
+			);
+			path = Observables;
+			sourceTree = "<group>";
+		};
 		368D4FD12AA621D300C205A0 = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +111,8 @@
 		368D4FDC2AA621D300C205A0 /* myflash */ = {
 			isa = PBXGroup;
 			children = (
+				3664B8FF2AAB6CBD00C65D9B /* Info.plist */,
+				3664B8FC2AAA2FFA00C65D9B /* Observables */,
 				368D4FDD2AA621D300C205A0 /* myflashApp.swift */,
 				368D4FDF2AA621D300C205A0 /* ContentView.swift */,
 				368D50072AA626F300C205A0 /* CharacterView.swift */,
@@ -216,7 +229,7 @@
 				};
 			};
 			buildConfigurationList = 368D4FD52AA621D300C205A0 /* Build configuration list for PBXProject "myflash" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -269,6 +282,7 @@
 				368D500C2AA68C4F00C205A0 /* LineOfCharactersView.swift in Sources */,
 				368D50082AA626F300C205A0 /* CharacterView.swift in Sources */,
 				368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */,
+				3664B8FE2AAA301F00C65D9B /* LanguageInUse.swift in Sources */,
 				368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */,
 				368D500A2AA627D600C205A0 /* helpers.swift in Sources */,
 			);
@@ -359,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -416,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -432,19 +446,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myflash/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyFlash;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the input. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Your vocal input is used to verify your response";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,19 +486,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 17;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = myflash/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MyFlash;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the input. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Your vocal input is used to verify your response";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

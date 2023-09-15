@@ -9,37 +9,26 @@ import SwiftUI
 
 struct LineOfCharactersView: View {
     
-    init(lineOfChars: [String]) {
+    init(lineOfChars: [aChar]) {
         myLineToDisplay = lineOfChars
-        mySet = "hiragana"
     }
     
-    init(lineOfChars: [String], setOf: String) {
-        myLineToDisplay = lineOfChars
-        mySet = setOf
-    }
-    
-    fileprivate var myLineToDisplay: [String] = [""]
-    fileprivate var mySet: String = ""
+    fileprivate var myLineToDisplay: [aChar] = []
     
     var body: some View {
         HStack {
-            if mySet == "katakana" {
-                ForEach(myLineToDisplay, id:\.self) { akey in
-                    Text(myKatakanaDict.value(forKey: akey) as! String)
-                }
-            } else if mySet == "hiragana" {
-                ForEach(myLineToDisplay, id:\.self) { aValue in
-                    Text(aValue)
-                }
-            } else {
-                
+            ForEach(myLineToDisplay, id:\.self) { achar in
+                CharacterView(achar: achar)
             }
-        }
-        .padding()
+        }.padding()
     }
 }
 
 #Preview {
-    LineOfCharactersView(lineOfChars: myFirstRowOfKana.allKeys as! [String])
+    LineOfCharactersView(lineOfChars:
+                            [aChar(row: 1, column: 1, sound: "a", code: "\u{3042}"),
+                             aChar(row: 1, column: 2, sound: "e", code: "\u{3044}"),
+                             aChar(row: 1, column: 3, sound: "u", code: "\u{3046}"),
+                             aChar(row: 1, column: 4, sound: "e", code: "\u{3048}"),
+                             aChar(row: 1, column: 5, sound: "o", code: "\u{304a}")])
 }
