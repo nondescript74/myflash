@@ -27,7 +27,7 @@ struct LineOfCharactersView: View {
 #Preview {
     LineOfCharactersView(lineOfChars:
                             [aChar(row: 1, column: 1, sound: "a", code: "\u{3042}"),
-                             aChar(row: 1, column: 2, sound: "e", code: "\u{3044}"),
+                             aChar(row: 1, column: 2, sound: "i", code: "\u{3044}"),
                              aChar(row: 1, column: 3, sound: "u", code: "\u{3046}"),
                              aChar(row: 1, column: 4, sound: "e", code: "\u{3048}"),
                              aChar(row: 1, column: 5, sound: "o", code: "\u{304a}")])
