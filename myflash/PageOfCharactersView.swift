@@ -27,15 +27,41 @@ struct PageOfCharactersView: View {
                     CharacterView(achar: achar)
                 }
             }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 3}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 4}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 5}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 6}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 7}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 8}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
         }
         
     }
 }
 
 #Preview {
-    PageOfCharactersView(arrayOfachars: [aChar(row: 1, column: 1, sound: "a", code: "\u{3042}"),
-                                         aChar(row: 1, column: 2, sound: "i", code: "\u{3044}"),
-                                         aChar(row: 1, column: 3, sound: "u", code: "\u{3046}"),
-                                         aChar(row: 1, column: 4, sound: "e", code: "\u{3048}"),
-                                         aChar(row: 1, column: 5, sound: "o", code: "\u{304a}")])
+    PageOfCharactersView(arrayOfachars: akanaarray2)
 }

@@ -7,33 +7,74 @@
 
 import Foundation
 
-
+/*
+ ァ
+ KATAKANA LETTER SMALL A
+ Unicode: U+30A1, UTF-8: E3 82 A1
+ */
 //let myKatakanaDictBig = NSDictionary(objects: [myFirRowOKKanaDict, mySecRowOKKanaDict, mythiRowOKKanaDict, myforRowOKKanaDict, myFifRowOKKanaDict, mySixRowOKKanaDict, mySevRowOKKanaDict, myEigRowOKKanaDict, myNinRowOKKanaDict, myTenRowOKKanaDict, myEleRowOKKanaDict],
 //                                  forKeys: ["firstrow" as NSCopying, "secondrow" as NSCopying, "thirdrow" as NSCopying, "fourthrow" as NSCopying, "fifthrow" as NSCopying, "sixthrow" as NSCopying, "seventhrow" as NSCopying, "eighthrow" as NSCopying, "ninthrow" as NSCopying, "tenthrow" as NSCopying, "eleventhrow" as NSCopying]
 //)
 
 let labelText: String = "\u{30ab}" + "\u{30ad}" + "\u{30af}" + "\u{30b1}" + "\u{30b3}"
 
-struct aChar: Codable, Equatable, Hashable {
-    var row: Int
-    var column: Int
-    var sound: String
-    var code: String
-    
-    static func == (lhs: aChar, rhs: aChar) -> Bool {
-        if lhs.row == rhs.row && lhs.column == rhs.column {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(row)
-        hasher.combine(column)
-        hasher.combine(code)
-    }
-}
+let akanaarray0 = [aChar(row: 1, column: 1, sound: "a", code: "\u{3042}"),
+                   aChar(row: 1, column: 2, sound: "i", code: "\u{3044}"),
+                   aChar(row: 1, column: 3, sound: "u", code: "\u{3046}"),
+                   aChar(row: 1, column: 4, sound: "e", code: "\u{3048}"),
+                   aChar(row: 1, column: 5, sound: "o", code: "\u{304a}")]
+
+let akanaarray1 = [aChar(row: 1, column: 1, sound: "a", code: "\u{3042}"),
+                   aChar(row: 1, column: 2, sound: "i", code: "\u{3044}"),
+                   aChar(row: 1, column: 3, sound: "u", code: "\u{3046}"),
+                   aChar(row: 1, column: 4, sound: "e", code: "\u{3048}"),
+                   aChar(row: 1, column: 5, sound: "o", code: "\u{304a}"),
+                   aChar(row: 2, column: 1, sound: "ka", code: "\u{30ab}"),
+                   aChar(row: 2, column: 2, sound: "ki", code: "\u{30ad}"),
+                   aChar(row: 2, column: 3, sound: "ku", code: "\u{30af}"),
+                   aChar(row: 2, column: 4, sound: "ke", code: "\u{30b1}"),
+                   aChar(row: 2, column: 5, sound: "ko", code: "\u{30b3}")]
+
+let akanaarray2 = [aChar(row: 1, column: 1, sound: "a", code: "\u{3042}"),
+                   aChar(row: 1, column: 2, sound: "i", code: "\u{3044}"),
+                   aChar(row: 1, column: 3, sound: "u", code: "\u{3046}"),
+                   aChar(row: 1, column: 4, sound: "e", code: "\u{3048}"),
+                   aChar(row: 1, column: 5, sound: "o", code: "\u{304a}"),
+                   aChar(row: 2, column: 1, sound: "ka", code: "\u{30ab}"),
+                   aChar(row: 2, column: 2, sound: "ki", code: "\u{30ad}"),
+                   aChar(row: 2, column: 3, sound: "ku", code: "\u{30af}"),
+                   aChar(row: 2, column: 4, sound: "ke", code: "\u{30b1}"),
+                   aChar(row: 2, column: 5, sound: "ko", code: "\u{30b3}"),
+                   aChar(row: 3, column: 1, sound: "ga", code: "\u{30ac}"),
+                   aChar(row: 3, column: 2, sound: "gi", code: "\u{30ae}"),
+                   aChar(row: 3, column: 3, sound: "gu", code: "\u{30b0}"),
+                   aChar(row: 3, column: 4, sound: "ge", code: "\u{30b2}"),
+                   aChar(row: 3, column: 5, sound: "go", code: "\u{30b4}"),
+                   aChar(row: 4, column: 1, sound: "ta", code: "\u{30b5}"),
+                   aChar(row: 4, column: 2, sound: "chi", code: "\u{30b7}"),
+                   aChar(row: 4, column: 3, sound: "tsu", code: "\u{30b9}"),
+                   aChar(row: 4, column: 4, sound: "te", code: "\u{30bb}"),
+                   aChar(row: 4, column: 5, sound: "to", code: "\u{30bd}"),
+                   aChar(row: 5, column: 1, sound: "za", code: "\u{30b6}"),
+                   aChar(row: 5, column: 2, sound: "zi", code: "\u{30b8}"),
+                   aChar(row: 5, column: 3, sound: "zu", code: "\u{30ba}"),
+                   aChar(row: 5, column: 4, sound: "ze", code: "\u{30bc}"),
+                   aChar(row: 5, column: 5, sound: "zo", code: "\u{30be}"),  // za zi zu ze zo
+                   aChar(row: 6, column: 1, sound: "ta", code: "\u{30bf}"),
+                   aChar(row: 6, column: 2, sound: "chi", code: "\u{30c1}"),
+                   aChar(row: 6, column: 3, sound: "tsu", code: "\u{30c3}"),
+                   aChar(row: 6, column: 4, sound: "te", code: "\u{30c5}"),
+                   aChar(row: 6, column: 5, sound: "to", code: "\u{30c7}"),
+                   aChar(row: 7, column: 1, sound: "da", code: "\u{30c0}"),
+                   aChar(row: 7, column: 2, sound: "di", code: "\u{30c2}"),
+                   aChar(row: 7, column: 3, sound: "du", code: "\u{30c4}"),
+                   aChar(row: 7, column: 4, sound: "de", code: "\u{30c6}"),
+                   aChar(row: 7, column: 5, sound: "do", code: "\u{30c8}"),
+                   aChar(row: 8, column: 1, sound: "ta", code: "\u{30ca}"),
+                   aChar(row: 8, column: 2, sound: "chi", code: "\u{3cb}"),
+                   aChar(row: 8, column: 3, sound: "tsu", code: "\u{30cc}"),
+                   aChar(row: 8, column: 4, sound: "te", code: "\u{30cd}"),
+                   aChar(row: 8, column: 5, sound: "to", code: "\u{30ce}")]  // na ni nu ne no
 //
 //let aNewKataKana = [[0, "\u{30a2}", "a"], [1, "\u{30a4}", "e"], [2, "\u{30a6}", "u"], [3, "\u{30a8}", "e"], [4, "\u{30aa}", "o"],
 //                    [6, "\u{30ab}", "ka"], [7, "\u{30ad}", "ki"], [8, "\u{30af}", "ku"], [9, "\u{30b1}", "ke"], [10, "\u{30b3}", "ko"],
@@ -154,7 +195,7 @@ struct aChar: Codable, Equatable, Hashable {
 ////let myEleRowOKKanaDict = NSDictionary(object: [myKatakanaDict.value(forKey: "a")! as! String, myKatakanaDict.value(forKey: "i")!as! String, myKatakanaDict.value(forKey: "u")!as! String, myKatakanaDict.value(forKey: "e")!as! String, myKatakanaDict.value(forKey: "o")!as! String] as [String], forKey: "firstrow" as NSCopying)
 ////
 ////let myTweRowOKKanaDict = NSDictionary(object: [myKatakanaDict.value(forKey: "ka")!, myKatakanaDict.value(forKey: "ki")!, myKatakanaDict.value(forKey: "ku")!, myKatakanaDict.value(forKey: "ke")!, myKatakanaDict.value(forKey: "ko")!], forKey: "firstrow" as NSCopying)
-//// 
+////
 //// let myFirstRowOfKana = NSDictionary(objects: ["\u{30a2}", "\u{30a4}", "\u{30a6}", "\u{30a8}", "\u{30aa}"] as [String],
 ////                                     forKeys: ["a" as NSCopying, "i" as NSCopying, "u" as NSCopying, "e" as NSCopying, "o" as NSCopying])
 ////
@@ -205,7 +246,7 @@ struct aChar: Codable, Equatable, Hashable {
 ////
 ////let myTwelfthRowOfKana =  NSDictionary(objects: ["\u{30f7}", "\u{30f8}", "\u{30f9}", "\u{30fa}"]as [String],
 ////                                                              forKeys: ["va" as NSCopying, "vi" as NSCopying, "ve" as NSCopying, "vo" as NSCopying])
-//// 
+////
 //
 //
 //// Hiragana

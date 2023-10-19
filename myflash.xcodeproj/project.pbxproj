@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,8 @@
 		368D50082AA626F300C205A0 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D50072AA626F300C205A0 /* CharacterView.swift */; };
 		368D500A2AA627D600C205A0 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D50092AA627D600C205A0 /* helpers.swift */; };
 		368D500C2AA68C4F00C205A0 /* LineOfCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */; };
+		369A12DE2AB646710047E351 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369A12DD2AB646710047E351 /* TextToSpeech.swift */; };
+		36F9DB842ADF4ACD00EA000C /* model_structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9DB832ADF4ACD00EA000C /* model_structs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		368D50072AA626F300C205A0 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		368D50092AA627D600C205A0 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
 		368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineOfCharactersView.swift; sourceTree = "<group>"; };
+		369A12DD2AB646710047E351 /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		36F9DB832ADF4ACD00EA000C /* model_structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model_structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,10 +117,12 @@
 		368D4FDC2AA621D300C205A0 /* myflash */ = {
 			isa = PBXGroup;
 			children = (
+				36F9DB822ADF4AA900EA000C /* Models */,
 				3664B8FF2AAB6CBD00C65D9B /* Info.plist */,
 				3664B8FC2AAA2FFA00C65D9B /* Observables */,
 				368D4FDD2AA621D300C205A0 /* myflashApp.swift */,
 				368D4FDF2AA621D300C205A0 /* ContentView.swift */,
+				369A12DD2AB646710047E351 /* TextToSpeech.swift */,
 				368D50072AA626F300C205A0 /* CharacterView.swift */,
 				368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */,
 				360772B82AB5169B0070AE16 /* PageOfCharactersView.swift */,
@@ -150,6 +156,14 @@
 				368D4FFA2AA621D400C205A0 /* myflashUITestsLaunchTests.swift */,
 			);
 			path = myflashUITests;
+			sourceTree = "<group>";
+		};
+		36F9DB822ADF4AA900EA000C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36F9DB832ADF4ACD00EA000C /* model_structs.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +246,7 @@
 				};
 			};
 			buildConfigurationList = 368D4FD52AA621D300C205A0 /* Build configuration list for PBXProject "myflash" */;
-			compatibilityVersion = "Xcode 15.0";
+			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -287,6 +301,8 @@
 				368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */,
 				3664B8FE2AAA301F00C65D9B /* LanguageInUse.swift in Sources */,
 				360772B92AB5169B0070AE16 /* PageOfCharactersView.swift in Sources */,
+				36F9DB842ADF4ACD00EA000C /* model_structs.swift in Sources */,
+				369A12DE2AB646710047E351 /* TextToSpeech.swift in Sources */,
 				368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */,
 				368D500A2AA627D600C205A0 /* helpers.swift in Sources */,
 			);
@@ -377,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -434,7 +450,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -450,7 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;
@@ -480,7 +496,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -490,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 27;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;
@@ -520,7 +536,7 @@
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

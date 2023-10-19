@@ -27,21 +27,21 @@ class LanguageInUse: ObservableObject {
 #endif
     }
     
-    func add(lang: String) {
-        if !self.language.contains(lang) {  // user may have hit the change button multiple times
-            self.language = lang
-#if DEBUG
-            print(msgs.langinuse.rawValue + msgs.add.rawValue + lang)
-#endif
-        }
-    }
-    
-    func remove(lang: String) {
-        self.language = ""
-        
-#if DEBUG
-        print(msgs.langinuse.rawValue + msgs.remove.rawValue)
-#endif
-        
-    }
+//    func add(lang: String) {
+//        if !self.language.contains(lang) {  // user may have hit the change button multiple times
+//            self.language = lang
+//#if DEBUG
+//            print(msgs.langinuse.rawValue + msgs.add.rawValue + lang)
+//#endif
+//        }
+//    }
+//    
+//    func remove(lang: String) {
+//        self.language = ""
+//        
+//#if DEBUG
+//        print(msgs.langinuse.rawValue + msgs.remove.rawValue)
+//#endif
+//        
+//    }
 }
