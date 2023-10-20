@@ -30,9 +30,10 @@ struct aChar: Codable, Equatable, Hashable {
     var column: Int
     var sound: String
     var code: String
+    var alt: Bool?
     
     static func == (lhs: aChar, rhs: aChar) -> Bool {
-        if lhs.row == rhs.row && lhs.column == rhs.column {
+        if lhs.row == rhs.row && lhs.column == rhs.column && lhs.code == rhs.code {
             return true
         } else {
             return false
@@ -46,13 +47,15 @@ struct aChar: Codable, Equatable, Hashable {
     }
 }
 struct Achar: Codable, Equatable, Hashable {
+    var id: UUID = UUID()
     var row: Int
     var column: Int
     var sound: String
     var code: String
+    var alt: Bool
     
     static func == (lhs: Achar, rhs: Achar) -> Bool {
-        if lhs.row == rhs.row && lhs.column == rhs.column {
+        if lhs.row == rhs.row && lhs.column == rhs.column && lhs.id == rhs.id && lhs.code == rhs.code {
             return true
         } else {
             return false
@@ -60,9 +63,27 @@ struct Achar: Codable, Equatable, Hashable {
     }
     
     public func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
         hasher.combine(row)
         hasher.combine(column)
         hasher.combine(code)
+        hasher.combine(alt)
+    }
+}
+
+struct AKanaArray2: Codable, Equatable, Hashable {
+    var arrayOfAChar: [aChar]
+    
+    static func == (lhs: AKanaArray2, rhs: AKanaArray2) -> Bool {
+        if lhs.arrayOfAChar == rhs.arrayOfAChar {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(arrayOfAChar)
     }
 }
 

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		360772B92AB5169B0070AE16 /* PageOfCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360772B82AB5169B0070AE16 /* PageOfCharactersView.swift */; };
-		3664B8FE2AAA301F00C65D9B /* LanguageInUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3664B8FD2AAA301F00C65D9B /* LanguageInUse.swift */; };
+		367C48502AE2DD9000C477E1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367C484F2AE2DD9000C477E1 /* SettingsView.swift */; };
 		368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FDD2AA621D300C205A0 /* myflashApp.swift */; };
 		368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D4FDF2AA621D300C205A0 /* ContentView.swift */; };
 		368D4FE22AA621D400C205A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 368D4FE12AA621D400C205A0 /* Assets.xcassets */; };
@@ -19,7 +19,7 @@
 		368D50082AA626F300C205A0 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D50072AA626F300C205A0 /* CharacterView.swift */; };
 		368D500A2AA627D600C205A0 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D50092AA627D600C205A0 /* helpers.swift */; };
 		368D500C2AA68C4F00C205A0 /* LineOfCharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */; };
-		369A12DE2AB646710047E351 /* TextToSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369A12DD2AB646710047E351 /* TextToSpeech.swift */; };
+		369A12DE2AB646710047E351 /* TextToSpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 369A12DD2AB646710047E351 /* TextToSpeechView.swift */; };
 		36F9DB842ADF4ACD00EA000C /* model_structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F9DB832ADF4ACD00EA000C /* model_structs.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,8 +42,8 @@
 
 /* Begin PBXFileReference section */
 		360772B82AB5169B0070AE16 /* PageOfCharactersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageOfCharactersView.swift; sourceTree = "<group>"; };
-		3664B8FD2AAA301F00C65D9B /* LanguageInUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageInUse.swift; sourceTree = "<group>"; };
 		3664B8FF2AAB6CBD00C65D9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		367C484F2AE2DD9000C477E1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		368D4FDA2AA621D300C205A0 /* myflash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myflash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368D4FDD2AA621D300C205A0 /* myflashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myflashApp.swift; sourceTree = "<group>"; };
 		368D4FDF2AA621D300C205A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		368D50072AA626F300C205A0 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		368D50092AA627D600C205A0 /* helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpers.swift; sourceTree = "<group>"; };
 		368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineOfCharactersView.swift; sourceTree = "<group>"; };
-		369A12DD2AB646710047E351 /* TextToSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeech.swift; sourceTree = "<group>"; };
+		369A12DD2AB646710047E351 /* TextToSpeechView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextToSpeechView.swift; sourceTree = "<group>"; };
 		36F9DB832ADF4ACD00EA000C /* model_structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model_structs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +89,6 @@
 		3664B8FC2AAA2FFA00C65D9B /* Observables */ = {
 			isa = PBXGroup;
 			children = (
-				3664B8FD2AAA301F00C65D9B /* LanguageInUse.swift */,
 			);
 			path = Observables;
 			sourceTree = "<group>";
@@ -122,7 +121,8 @@
 				3664B8FC2AAA2FFA00C65D9B /* Observables */,
 				368D4FDD2AA621D300C205A0 /* myflashApp.swift */,
 				368D4FDF2AA621D300C205A0 /* ContentView.swift */,
-				369A12DD2AB646710047E351 /* TextToSpeech.swift */,
+				367C484F2AE2DD9000C477E1 /* SettingsView.swift */,
+				369A12DD2AB646710047E351 /* TextToSpeechView.swift */,
 				368D50072AA626F300C205A0 /* CharacterView.swift */,
 				368D500B2AA68C4F00C205A0 /* LineOfCharactersView.swift */,
 				360772B82AB5169B0070AE16 /* PageOfCharactersView.swift */,
@@ -299,10 +299,10 @@
 				368D500C2AA68C4F00C205A0 /* LineOfCharactersView.swift in Sources */,
 				368D50082AA626F300C205A0 /* CharacterView.swift in Sources */,
 				368D4FE02AA621D300C205A0 /* ContentView.swift in Sources */,
-				3664B8FE2AAA301F00C65D9B /* LanguageInUse.swift in Sources */,
 				360772B92AB5169B0070AE16 /* PageOfCharactersView.swift in Sources */,
+				367C48502AE2DD9000C477E1 /* SettingsView.swift in Sources */,
 				36F9DB842ADF4ACD00EA000C /* model_structs.swift in Sources */,
-				369A12DE2AB646710047E351 /* TextToSpeech.swift in Sources */,
+				369A12DE2AB646710047E351 /* TextToSpeechView.swift in Sources */,
 				368D4FDE2AA621D300C205A0 /* myflashApp.swift in Sources */,
 				368D500A2AA627D600C205A0 /* helpers.swift in Sources */,
 			);
@@ -467,7 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;
@@ -508,7 +508,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 32;
+				CURRENT_PROJECT_VERSION = 46;
 				DEVELOPMENT_ASSET_PATHS = "\"myflash/Preview Content\"";
 				DEVELOPMENT_TEAM = YKHW2TJ32G;
 				ENABLE_PREVIEWS = YES;

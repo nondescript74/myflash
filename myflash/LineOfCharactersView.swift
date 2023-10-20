@@ -25,5 +25,5 @@ struct LineOfCharactersView: View {
 }
 
 #Preview {
-    LineOfCharactersView(lineOfChars: akanaarray1)
+    LineOfCharactersView(lineOfChars: myKataKanaaCharsLine2f)
 }

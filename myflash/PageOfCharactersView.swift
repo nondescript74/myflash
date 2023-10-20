@@ -63,5 +63,5 @@ struct PageOfCharactersView: View {
 }
 
 #Preview {
-    PageOfCharactersView(arrayOfachars: akanaarray2)
+    PageOfCharactersView(arrayOfachars: myKataKanaaChars2f)
 }

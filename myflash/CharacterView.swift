@@ -9,6 +9,7 @@ import SwiftUI
 import AVFoundation
 
 struct CharacterView: View {
+//    @EnvironmentObject var langInUse: LanguageInUse
     init(achar: aChar) {
         myCharToDisplay = achar.code
         myTextToSpeech = achar.sound
@@ -16,20 +17,20 @@ struct CharacterView: View {
     
     fileprivate var myCharToDisplay: String
     fileprivate var myTextToSpeech: String
-//    let synthesizer = AVSpeechSynthesizer()
+    let synthesizer = AVSpeechSynthesizer()
     
     var body: some View {
         Text(myCharToDisplay)
             .font(.headline)
             .padding(5)
-//            .onTapGesture {
-//                let utterance = AVSpeechUtterance(string: myTextToSpeech)
-//                utterance.voice = AVSpeechSynthesisVoice(language: "ja-JP")
-//                utterance.rate = 1.0
-//                utterance.volume = 1.0
-//                
-//                synthesizer.speak(utterance)
-//            }
+            .onTapGesture {
+                let utterance = AVSpeechUtterance(string: myTextToSpeech)
+                utterance.voice = AVSpeechSynthesisVoice(language: "jp-JA")
+                utterance.rate = 0.5
+                utterance.volume = 5.0
+                
+                synthesizer.speak(utterance)
+            }
     }
 }
 
@@ -38,8 +39,9 @@ struct CharacterView: View {
     CharacterView(achar: aChar(row: 1, column: 1, sound: "a", code: "\u{30a2}"))
 }
 
-//                let voices = AVSpeechSynthesisVoice.speechVoices()
+//                let voices: [AVSpeechSynthesisVoice] = AVSpeechSynthesisVoice.speechVoices()
 //
 //                for voice in voices {
-//                    print(voice.language)
+//                    print(voice.language.utf8)
 //                }
+
