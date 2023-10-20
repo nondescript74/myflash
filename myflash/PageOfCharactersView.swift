@@ -57,6 +57,36 @@ struct PageOfCharactersView: View {
                     CharacterView(achar: achar)
                 }
             }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 9}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 10}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 11}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 12}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 13}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
+            HStack {
+                ForEach(myArrayOfChars.filter({$0.row == 14}), id: \.self) { achar in
+                    CharacterView(achar: achar)
+                }
+            }
         }
         
     }
