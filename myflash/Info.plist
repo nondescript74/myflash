@@ -4,5 +4,9 @@
 <dict>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>We use the microphone to record your response</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>We use speech recognition to determine your response</string>
 </dict>
 </plist>

@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    //    @EnvironmentObject var langInUse: LanguageInUse
     
     fileprivate let hiraLabelText: String = ""
     fileprivate let myaChar: aChar = aChar(row: 1, column: 1, sound: "a", code: "\u{30a2}", alt: false)
@@ -17,6 +16,9 @@ struct ContentView: View {
         
         TabView {
             SettingsView()
+                .tabItem {
+                    Label("setting", systemImage: "heart.fill")
+                }
             
             TextToSpeech()
                 .tabItem {
@@ -35,12 +37,15 @@ struct ContentView: View {
                     Label(labelText, systemImage: "rectangle.and.pencil.and.ellipsis") }
             
         }
-        //        .environmentObject(langInUse)
     }
 }
 
 #Preview {
     ContentView()
-    //        .environmentObject(LanguageInUse())
 }
+/*
+ ⛅︎
+ SUN BEHIND CLOUD
+ Unicode: U+26C5 U+FE0E, UTF-8: E2 9B 85 EF B8 8E
+ */
 
