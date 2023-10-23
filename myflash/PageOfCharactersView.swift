@@ -14,16 +14,15 @@ struct PageOfCharactersView: View {
     
     var body: some View {
         VStack {
-            Button(action:
-                    {
-                myLang.toggle()
-                langInUse.change(language: "jp-JA")
-#if DEBUG
-                print("Set language to: " + langInUse.language)
-#endif
-            },
-                   label: { myLang ? Text("Kana") : Text("Gana")}
-            )
+//            Button(action:
+//                    {
+//                langInUse.change(language: "jp-JA")
+//#if DEBUG
+//                print("Set language to: " + langInUse.language)
+//#endif
+//            },
+//                   label: { myLang ? Text("Kana") : Text("Gana")}
+//            )
             
             VStack {
                 LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 1}))
@@ -44,7 +43,7 @@ struct PageOfCharactersView: View {
                 LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 16}))
             }
         }
-        .environmentObject(langInUse)
+        
         
     }
 }
