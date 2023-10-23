@@ -8,90 +8,48 @@
 import SwiftUI
 
 struct PageOfCharactersView: View {
+    @EnvironmentObject var langInUse: LanguageInUse
     
-    init(arrayOfachars: [aChar]) {
-        self.myArrayOfChars = arrayOfachars
-    }
-    
-    fileprivate var myArrayOfChars: [aChar]
+    @State private var myLang: Bool = false
     
     var body: some View {
         VStack {
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 1}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 2}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 3}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 4}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 5}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 6}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 7}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 8}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 9}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 10}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 11}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 12}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 13}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
-            }
-            HStack {
-                ForEach(myArrayOfChars.filter({$0.row == 14}), id: \.self) { achar in
-                    CharacterView(achar: achar)
-                }
+            Button(action:
+                    {
+                myLang.toggle()
+                langInUse.change(language: "jp-JA")
+#if DEBUG
+                print("Set language to: " + langInUse.language)
+#endif
+            },
+                   label: { myLang ? Text("Kana") : Text("Gana")}
+            )
+            
+            VStack {
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 1}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 2}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 3}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 4}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 5}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 6}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 7}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 8}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 9}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 10}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 11}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 12}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 13}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 14}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 15}))
+                LineOfCharactersView(lineOfChars: myLang ? myKataKanaaChars2f : myHiraGanaaChars2f .filter({$0.row == 16}))
             }
         }
+        .environmentObject(langInUse)
         
     }
 }
 
 #Preview {
-    PageOfCharactersView(arrayOfachars: myKataKanaaChars2f)
+    PageOfCharactersView()
+        .environmentObject(LanguageInUse())
 }

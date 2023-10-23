@@ -12,6 +12,7 @@ struct myflashApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(LanguageInUse())
         }
     }
 }

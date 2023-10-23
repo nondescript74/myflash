@@ -9,10 +9,11 @@ import SwiftUI
 import AVFoundation
 
 struct TextToSpeech: View {
-//    @EnvironmentObject var langInUse: LanguageInUse
+    @EnvironmentObject var langInUse: LanguageInUse
     
     @State private var inputMessage: String = ""
     @State private var selectedFlavor: Languagez = .English
+//    @FocusState private var entryIsFocused: Bool
     let speechSynthesizer = AVSpeechSynthesizer()
 
     enum Languagez: String, CaseIterable, Identifiable {
@@ -28,23 +29,10 @@ struct TextToSpeech: View {
             current = "ja-JP"
         case .French:
             current = "fr-FR"
-//            langInUse.language = current
         }
+        langInUse.change(language: current)
         return current
     }
-    
-//    fileprivate func setLanguageInUse() {
-//        var myLang: String = "en-US"
-//        switch selectedFlavor {
-//        case .English:
-//            myLang = "en-US"
-//        case .Japanese:
-//            myLang = "ja-JP"
-//        case .French:
-//            myLang = "fr-FR"
-//            langInUse.language = myLang
-//        }
-//    }
 
     var body: some View {
         VStack {
@@ -53,16 +41,20 @@ struct TextToSpeech: View {
                 .fontWeight(.bold)
             Picker("Language", selection: $selectedFlavor) {
                 ForEach(Languagez.allCases) { flavor in
-                    
                     Text(flavor.rawValue.capitalized)
                 }
             }
+            
+//            TextField("Enter your words to be spoken", text: $inputMessage)
+//                .padding()
+//                .focused($entryIsFocused)
             
             TextEditor(text: $inputMessage)
                 .font(.title2)
                 .background(Color.gray)
                 .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                 .padding()
+//                .focused($entryIsFocused)
             
             Button {
                 let utterance = AVSpeechUtterance(string: inputMessage)
@@ -72,17 +64,31 @@ struct TextToSpeech: View {
                 utterance.volume = 20
             
                 speechSynthesizer.speak(utterance)
+                hideKeyboard()
+                
+            
             } label: {
                 Text("Read")
                     .bold()
             }
+            
             .buttonStyle(.borderedProminent)
             .controlSize(.large)
             
         }
+        .environmentObject(langInUse)
     }
 }
 
 #Preview {
     TextToSpeech()
+        .environmentObject(LanguageInUse())
 }
+
+#if canImport(UIKit)
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+#endif

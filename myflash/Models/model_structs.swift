@@ -71,37 +71,37 @@ struct Achar: Codable, Equatable, Hashable {
     }
 }
 
-struct AKanaArray2: Codable, Equatable, Hashable {
-    var arrayOfAChar: [aChar]
-    
-    static func == (lhs: AKanaArray2, rhs: AKanaArray2) -> Bool {
-        if lhs.arrayOfAChar == rhs.arrayOfAChar {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(arrayOfAChar)
-    }
-}
-
-struct AKanaArray: Codable, Equatable, Hashable {
-    var arrayOfAChar: [Achar]
-    
-    static func == (lhs: AKanaArray, rhs: AKanaArray) -> Bool {
-        if lhs.arrayOfAChar == rhs.arrayOfAChar {
-            return true
-        } else {
-            return false
-        }
-    }
-    
-    public func hash(into hasher: inout Hasher) {
-        hasher.combine(arrayOfAChar)
-    }
-}
+//struct AKanaArray2: Codable, Equatable, Hashable {
+//    var arrayOfAChar: [aChar]
+//    
+//    static func == (lhs: AKanaArray2, rhs: AKanaArray2) -> Bool {
+//        if lhs.arrayOfAChar == rhs.arrayOfAChar {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
+//    
+//    public func hash(into hasher: inout Hasher) {
+//        hasher.combine(arrayOfAChar)
+//    }
+//}
+//
+//struct AKanaArray: Codable, Equatable, Hashable {
+//    var arrayOfAChar: [Achar]
+//    
+//    static func == (lhs: AKanaArray, rhs: AKanaArray) -> Bool {
+//        if lhs.arrayOfAChar == rhs.arrayOfAChar {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
+//    
+//    public func hash(into hasher: inout Hasher) {
+//        hasher.combine(arrayOfAChar)
+//    }
+//}
 /*
  ἄ
  GREEK SMALL LETTER ALPHA WITH PSILI AND OXIA

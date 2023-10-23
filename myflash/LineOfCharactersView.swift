@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LineOfCharactersView: View {
     
+    @EnvironmentObject var langInUse: LanguageInUse
+    
     init(lineOfChars: [aChar]) {
         myLineToDisplay = lineOfChars
     }
@@ -20,10 +22,11 @@ struct LineOfCharactersView: View {
             ForEach(myLineToDisplay, id:\.self) { achar in
                 CharacterView(achar: achar)
             }
-        }.padding()
+        }
     }
 }
 
 #Preview {
-    LineOfCharactersView(lineOfChars: myKataKanaaCharsLine2f)
+    LineOfCharactersView(lineOfChars: myKataKanaaCharsLine2f.filter({$0.row == 5}))
+        .environmentObject(LanguageInUse())
 }

@@ -12,7 +12,7 @@ class LanguageInUse: ObservableObject {
     @Published var language: String
     
     init() {
-        self.language = "jp-JA"
+        self.language = "en-US"
     }
     
     // MARK: - Properties
@@ -22,11 +22,10 @@ class LanguageInUse: ObservableObject {
     }
     @MainActor
     // MARK: - Methods
-    func change(lang: String) {
+    func change(language: String) {
         self.language = language
 #if DEBUG
         print(msgs.langinuse.rawValue + msgs.changed.rawValue)
 #endif
     }
-    
 }

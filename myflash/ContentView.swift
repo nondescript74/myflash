@@ -9,8 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    fileprivate let hiraLabelText: String = ""
+    @EnvironmentObject var langInUse: LanguageInUse
+    
     fileprivate let myaChar: aChar = aChar(row: 1, column: 1, sound: "a", code: "\u{30a2}", alt: false)
+    
+    fileprivate let myaChars: [aChar] = myKataKanaaCharsLine2f
     
     var body: some View {
         
@@ -24,24 +27,29 @@ struct ContentView: View {
                 .tabItem {
                     Label("a", systemImage: "book")
                 }
-            CharacterView(achar: myaChar)
-                .tabItem {
-                    Label("a", systemImage: "bookmark.square")
-                }
+
+//            CharacterView(achar: myaChar)
+//                .tabItem {
+//                    Label("a", systemImage: "bookmark.square")
+//                }
+            
             LineOfCharactersView(lineOfChars: myKataKanaaCharsLine2f)
                 .tabItem {
-                    Label(labelText, systemImage: "list.dash") }
+                    Label("b", systemImage: "book.fill")
+                }
             
-            PageOfCharactersView(arrayOfachars: myKataKanaaChars2f)
+            PageOfCharactersView()
                 .tabItem {
                     Label(labelText, systemImage: "rectangle.and.pencil.and.ellipsis") }
             
         }
+        .environmentObject(langInUse)
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(LanguageInUse())
 }
 /*
  ⛅︎

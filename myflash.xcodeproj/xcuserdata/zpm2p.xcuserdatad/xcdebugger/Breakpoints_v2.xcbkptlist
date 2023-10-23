@@ -3,4 +3,86 @@
    uuid = "53A7E4ED-0A86-4743-AA26-ACCC60CC4DD3"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A546F395-A216-4376-88D1-3D4DA7F3257B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "myflash/LineOfCharactersView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A546F395-A216-4376-88D1-3D4DA7F3257B - 47dc1a7790f54782"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;myflash.aChar&gt;, myflash.aChar, myflash.CharacterView&gt; in myflash.LineOfCharactersView.body.getter : some"
+                  moduleName = "myflash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zpm2p/Documents/Documents/Developer_swift/myflash/myflash/LineOfCharactersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "A546F395-A216-4376-88D1-3D4DA7F3257B - 3431bcaa73d77cac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (myflash.aChar) -&gt; myflash.CharacterView in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;myflash.aChar&gt;, myflash.aChar, myflash.CharacterView&gt; in myflash.LineOfCharactersView.body.getter : some"
+                  moduleName = "myflash"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/zpm2p/Documents/Documents/Developer_swift/myflash/myflash/LineOfCharactersView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "690B4315-1400-4CAF-A377-25D9D2CA79DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "myflash/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DF07911-2EE5-4BB8-9DFC-3CD58EF17B37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "myflash/LineOfCharactersView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init(lineOfChars:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
