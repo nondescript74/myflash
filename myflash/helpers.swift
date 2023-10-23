@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 let myKataKanaaCharsLine2f = [aChar(row: 5, column: 1, sound: "za", code: "\u{30b6}", alt: true),
                               aChar(row: 5, column: 2, sound: "zi", code: "\u{30b8}", alt: true),
@@ -167,4 +168,60 @@ let myHiraGanaaChars2f = [aChar(row: 1, column: 1, sound: "a", code: "\u{3042}",
                           aChar(row: 16, column: 7, sound: "Double hyphen", code: "\u{30a0}", alt: true)]
 
 let labelText: String = "\u{30ab}" + "\u{30ad}" + "\u{30af}" + "\u{30b1}" + "\u{30b3}"
+
+let group1K: Group = Group {
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 1}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 2}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 3}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 4}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 5}))
+}
+
+let group2K: Group = Group {
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 6}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 7}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 8}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 8}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 10}))
+}
+
+let group3K: Group = Group {
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 11}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 12}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 13}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 14}))
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 15}))
+}
+
+let group4K: Group = Group {
+    LineOfCharactersView(lineOfChars: myKataKanaaChars2f.filter({$0.row == 16}))
+}
+
+let group1G: Group = Group {
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 1}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 2}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 3}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 4}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 5}))
+}
+
+let group2G: Group = Group {
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 6}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 7}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 8}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 9}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 10}))
+}
+
+let group3G: Group = Group {
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 11}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 12}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 13}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 14}))
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 15}))
+}
+
+let group4G: Group = Group {
+    LineOfCharactersView(lineOfChars: myHiraGanaaChars2f.filter({$0.row == 16}))
+}
 
